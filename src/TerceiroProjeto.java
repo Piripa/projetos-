@@ -17,12 +17,12 @@ public class TerceiroProjeto {
                     System.out.println("então...");
                 }
                 else{
-                    System.out.println("oãtne...");
+                    System.out.println("oãtne... ");
                 }
             }
 
         
-        
+            input.close();
         
         } while (false);
 
