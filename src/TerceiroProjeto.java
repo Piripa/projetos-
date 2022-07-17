@@ -1,18 +1,21 @@
 import java.util.Scanner;
-
+//Import do scanner para interagir com o usuário
 public class TerceiroProjeto {
     public static void main(String[] args) {
+        //Atribuindo nome para meu scanner
             Scanner input = new Scanner(System.in);
             System.out.println("... Olá, meu nome é Piripa, sou o gênio da lâmpada que você esfregou."+
                                "Você tem direito um pedido para ser realizado, você pode pedir o que quiser," +
                                "porém fique atento as consequências que podem acarretar no futuro pelas suas decisões então fique bem atento no que irá pedir viu.");
             System.out.println("Enfim, vamos deixar de enrolagem e me diga, você vai realizar algum pedido?");
             String first = input.nextLine();
+            //equalIgnoreCase para comparar o nome, caso é verdadeiro ou não, e para ignorar letras maiusculas e minusculas
             if(first.equalsIgnoreCase("Sim")){
                 System.out.println("Bom...então se você vai realizar um pedido eu preciso que me informe antes o tipo de seu pedido, se ele vai ser pedido de poder ou  de tempo."+
-                                   "O Pedido do tipo PODER, lhe proproe opções como habilidades especiais ou algo que você queira obter muito, por exemplo, dinheiro."+
-                                   "Já o pedido do tempo, permite você viajar 10 anos para seu futurou ou 10 anos para o seu passsado.");
-                System.out.println("E então, qual vai ser o tipo do seu pedido?");
+                                   "\nO Pedido do tipo PODER, lhe proproe opções como habilidades especiais ou algo que você queira obter muito, por exemplo, dinheiro."+
+                                   "\nJá o pedido do tempo, permite você viajar 10 anos para seu futurou ou 10 anos para o seu passsado.");
+                System.out.println("\nE então, qual vai ser o tipo do seu pedido?");
+                // \n para pular ficar a baixo da linha.
                 String firstTwo = input.nextLine();
                 if(firstTwo.equalsIgnoreCase("Poder")){
                     System.out.println("Parabéns! Você escolheu o tipo poder e agora você pode escolher qual habilidade ou algo que queira muito ter. Eai, qual?");
@@ -32,6 +35,7 @@ public class TerceiroProjeto {
                 System.out.println("Parabéns pela escolha, infelizmente como não desejas realizar nenhum pedido,o terei que entrar na minha lâmpada novamente. Até a próxima!");
                 System.out.println("'Tente a sua sorte! A vida é feita de oportunidades. O homem que vai mais longe é quase sempre aquele que tem coragem de arriscar.' - Dale Carnegie");
             }
+            //Fechamento do input
              input.close();       
       }
 }
