@@ -1,9 +1,19 @@
 import java.util.Scanner;
+
+import javax.swing.InputMap;
 //Import do scanner para interagir com o usuário
 public class TerceiroProjeto {
     public static void main(String[] args) {
         //Atribuindo nome para meu scanner
+        do {
+        
             Scanner input = new Scanner(System.in);
+            System.out.println("Você quer continuar a história?");
+            String escolha = input.nextLine();
+            if(escolha.equalsIgnoreCase("não")){
+                break;
+            }
+            else{
             System.out.println("... Olá, meu nome é Piripa, sou o gênio da lâmpada que você esfregou."+
                                "Você tem direito um pedido para ser realizado, você pode pedir o que quiser," +
                                "porém fique atento as consequências que podem acarretar no futuro pelas suas decisões então fique bem atento no que irá pedir viu.");
@@ -35,7 +45,9 @@ public class TerceiroProjeto {
                 System.out.println(" infelizmente como não desejas realizar nenhum pedido,o terei que entrar na minha lâmpada novamente, fico triste porque você poderia adquirir algo novo para você mas é isso. Tchau!");
                 System.out.println("'Tente a sua sorte! A vida é feita de oportunidades. O homem que vai mais longe é quase sempre aquele que tem coragem de arriscar.' - Dale Carnegie");
             }
+         }
             //Fechamento do input
-             input.close();       
+             input.close();  
+            } while (true);     
       }
-}
+}       
